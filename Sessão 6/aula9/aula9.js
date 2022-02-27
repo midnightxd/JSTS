@@ -15,3 +15,7 @@
  * 11 - (284 % 11) = (Fist digit)
  */
 
+let cpf = '096-921-623-89';
+let cleanCpf = cpf.replace(/\D+/g, '');
+const cpfArray = Array.from(cleanCpf);
+console.log(cpfArray.reduce((ac, val) => ac + Number(val), 0));
