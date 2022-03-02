@@ -1,4 +1,4 @@
-(() => {
+//weff
   class ValidateCPF {
     constructor(sendCPF) {
       Object.defineProperty(this, 'cleanCPF', {
@@ -42,10 +42,11 @@
       return this.newCPF === this.cleanCPF;
     }
   }
-  const cpfi = new ValidateCPF('096.921.623-89');
-  if(cpfi.validate()) {
-    console.log('CPF is valid');
-  } else {
-    console.log('CPF is invalid');
-  }
-})();
+
+let valida = new ValidateCPF('096.921.621-89');
+if (valida.validate()) {
+  console.log('CPF valido');
+} else {
+  console.log('CPF invalido');
+}
+//}
