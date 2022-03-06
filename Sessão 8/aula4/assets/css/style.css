@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #000000;
+  color: antiquewhite
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.render {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 40px 10px;
+}
+
+.render ul li {
+  list-style: none;
+  font-size: 22px;
+}
+
+.render ul li a {
+  text-decoration: none;
+}
