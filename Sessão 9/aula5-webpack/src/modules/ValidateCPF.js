@@ -23,10 +23,10 @@ export default class ValidateCPF {
         let total = 0;
         let reverse = cpfParse.length + 1;
     
-        for(let i of cpfParse) {
-          total += reverse * Number(i);
-          reverse--;
-        }
+        // for(let i of cpfParse) {
+        //   total += reverse * Number(i);
+        //   reverse--;
+        // }
     
         const digito = 11 - (total % 11);
         return digito <= 9 ? String(digito) : '0';
