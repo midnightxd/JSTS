@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap');
+
+:root{
+    --dark-mode: #606060;
+    --light-mode: #fff;
+    --buttons: #404040;
+    --buttons-hover: #303030;
+    --box-shadow: #404040;
+    --action-on: #00FF00;
+    --action-error: rgb(221, 71, 71);
+    --realces: #ACC500;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: url('/src/assets/img/bgNitido.jpg')no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    transition: 0.5s;
+}
+
+header .navegation a {
+    color: #202020;
+    background: var(--realces);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+header .navegation a:not(:last-child) {
+    margin-right: 20px;
+}
+
+header .navegation a:hover {
+    color: var(--realces);
+    background: #252525;
+}
+
+.content {
+    max-width: 650px;
+    margin: 60px 100px;
+}
+
+.content .info h2{
+    color: var(--realces);
+    font-size: 50px;
+    margin-top: 80px;
+    letter-spacing: 1px;
+}
+
+.content .info span{
+    color: #8ea305;
+}
+
+.content .info p{
+    color: antiquewhite;
+    font-size: 18px;
+    margin-top: 20px;
+    max-width: 550px;
+    text-align: left;
+}
+
+.content .info-btn {
+    background: #ACC500;
+    padding: 5px 7px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 15px;
+    transition: 0.5s;
+}
+
+.content .info-btn:hover {
+    transform: rotate(360deg);
+    background: #252525;
+}
+
+.content .info-btn a {
+    color: #252525;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.content .info-btn a:hover {
+    color: #ACC500;
+    font-weight: 600P;
+}
