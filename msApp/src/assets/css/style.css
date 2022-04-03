@@ -98,7 +98,7 @@ header .navegation a:hover {
 }
 
 .content .info-btn:hover {
-    transform: rotate(360deg);
+    transform: translateX(10px);
     background: #252525;
 }
 
