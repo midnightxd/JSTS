@@ -1,115 +1,120 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Poppins:wght@100;200;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Nunito:wght@200;400;500;600;800;900&family=Poppins:wght@100;200;400;500;700;900&display=swap');
 
-:root{
-    --dark-mode: #606060;
-    --light-mode: #fff;
-    --buttons: #404040;
-    --buttons-hover: #303030;
-    --box-shadow: #404040;
-    --action-on: #00FF00;
-    --action-error: rgb(221, 71, 71);
-    --realces: #ACC500;
+:root {
+    --text: #ACC500;
 }
-*
-{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
-.banner {
+
+section {
     position: relative;
     width: 100%;
     min-height: 100vh;
+    padding: 100px;
     display: flex;
-    flex-direction: column;
     justify-content: flex-start;
-    background: url('/src/assets/img/bgNitido.jpg')no-repeat;
-    background-size: cover;
-    background-position: center;
+    align-items: center;
 }
 
 header {
-    position: relative;
+    position: fixed;
     top: 0;
+    left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 40px 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    z-index: 1000;
 }
 
 header .logo {
     position: relative;
-    transition: 0.5s;
+    display: inline-block;
 }
 
-header .navegation a {
-    color: #202020;
-    background: var(--realces);
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: var(--text);
+    font-weight: 500;
+    font-size: 18px;
+    margin-left: 15px;
+    display: inline-block;
+    padding: 5px 12px;
     text-decoration: none;
-    font-weight: 600;
-    letter-spacing: 2px;
-    padding: 5px 10px;
-    border-radius: 5px;
+    user-select: none;
+}
+
+header ul li a.active,
+header ul li a:hover
+{
+    background: #303030;
+    font-weight: 500;
+    border-radius: 35px;
     transition: 0.5s;
-}
-
-header .navegation a:not(:last-child) {
-    margin-right: 20px;
-}
-
-header .navegation a:hover {
-    color: var(--realces);
-    background: #252525;
 }
 
 .content {
-    max-width: 650px;
-    margin: 60px 100px;
+    position: relative;
+    display: flex;
 }
 
-.content .info h2{
-    color: var(--realces);
-    font-size: 50px;
-    margin-top: 80px;
-    letter-spacing: 1px;
-}
-
-.content .info span{
-    color: #8ea305;
-}
-
-.content .info p{
-    color: antiquewhite;
-    font-size: 18px;
-    margin-top: 20px;
+.content .textBox {
+    position: relative;
     max-width: 550px;
-    text-align: left;
 }
 
-.content .info-btn {
-    background: #ACC500;
-    padding: 5px 7px;
-    border: none;
-    border-radius: 10px;
-    margin-top: 15px;
-    transition: 0.5s;
-}
-
-.content .info-btn:hover {
-    transform: translateX(10px);
-    background: #252525;
-}
-
-.content .info-btn a {
-    color: #252525;
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.content .info-btn a:hover {
+.content .textBox h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 3.3em;
+    margin-bottom: 10px;
+    line-height: 1.2em;
+    font-weight: 900;
     color: #ACC500;
-    font-weight: 600P;
+}
+
+.content .textBox span {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1em;
+    letter-spacing: 10px;
+    font-weight: 800;
+}
+
+.content .textBox p {
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+    font-size: 18px;
+    color: #454545;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 15px;
+    background: #303030;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #ACC500;
+    transition: 0.3s ease-out;
+}
+
+.content .textBox a:hover {
+    background: #ACC500;
+    color: #303030;
 }
