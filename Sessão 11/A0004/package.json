@@ -1,0 +1,11 @@
+{
+  "name": "A0004",
+  "version": "1.0.0",
+  "description": "introduction for ts",
+  "main": "index.js",
+  "author": "midightxd",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.7.3"
+  }
+}
